@@ -6,11 +6,11 @@
 1.添加jtool的github的repository
 ```xml
 <repositories>
-		<repository>
-			<id>tool-maven-repository</id>
-			<url>https://raw.github.com/afmobi-QSee/tool-maven-repository/master/releases</url>
-		</repository>
-	</repositories>
+    <repository>
+        <id>tool-maven-repository</id>
+        <url>https://raw.github.com/afmobi-QSee/tool-maven-repository/master/releases</url>
+    </repository>
+</repositories>
 ```
 
 2.添加依赖
