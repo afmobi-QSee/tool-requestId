@@ -59,7 +59,7 @@
 		<repository>
 			<id>tool-maven-repository</id>
 			<name>Internal Repository</name>
-			<url>file://${project.basedir}/../tool-mvn-repository/releases</url>
+			<url>file://${project.basedir}/../tool-maven-repository/releases</url>
 		</repository>
 	</distributionManagement>
 
