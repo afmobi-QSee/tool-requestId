@@ -22,12 +22,12 @@
 </dependency>
 ```
 
-2.springboot添加扫描包
+3.springboot添加扫描包
 ```java
 @ServletComponentScan(basePackages={"com.tool"})
 ```
 
-3.logback使用[RequestId: %X{X-Afmobi-RequestId}]获取RequestId
+4.logback使用[RequestId: %X{X-Afmobi-RequestId}]获取RequestId
 ```xml
 <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
     <encoder>
