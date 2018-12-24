@@ -7,7 +7,7 @@ import org.slf4j.MDC;
  */
 public class RequestIdHelper {
 
-    public static final String HEADER_REQUEST_ID = "X-Afmobi-RequestId";
+    public static final String HEADER_REQUEST_ID = "X-Base-RequestId";
 
     public static void setRequestId(String logId) {
         MDC.put(HEADER_REQUEST_ID, logId);

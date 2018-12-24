@@ -1,6 +1,6 @@
 # tool-requestId
 
-使用Filter,给所有请求头和响应头添加X-Afmobi-RequestId。调用方没传时，默认生成。此RequestId方便查日志定位问题。
+使用Filter,给所有请求头和响应头添加X-Base-RequestId。调用方没传时，默认生成。此RequestId方便查日志定位问题。
 
 # Quick start
 1.添加tool的github的repository
@@ -18,7 +18,7 @@
 <dependency>
     <groupId>com.tool</groupId>
     <artifactId>tool-requestId</artifactId>
-    <version>0.0.1</version>
+    <version>0.0.2</version>
 </dependency>
 ```
 
@@ -27,11 +27,11 @@
 @ServletComponentScan(basePackages={"com.tool"})
 ```
 
-4.logback使用[RequestId: %X{X-Afmobi-RequestId}]获取RequestId
+4.logback使用[RequestId: %X{X-Base-RequestId}]获取RequestId
 ```xml
 <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
     <encoder>
-        <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} [RequestId: %X{X-Afmobi-RequestId}] %logger{50} - %msg%n</pattern>
+        <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} [RequestId: %X{X-Base-RequestId}] %logger{50} - %msg%n</pattern>
     </encoder>
 </appender>
 ```
